@@ -89,7 +89,7 @@ const Child = () => {
           }}
         />
         <input
-          className="bg-violet-400 w-full mt-2 rounded h-10 font-bold text-md uppercase text-white transition cursor-pointer transition-all hover:bg-violet-500"
+          className="bg-violet-400 w-full mt-2 rounded h-10 font-bold text-md uppercase text-white transition cursor-pointer transition-all hover:bg-violet-500 tracking-wider flex justify-center items-center"
           type="submit"
           value="Add Transaction"
           onClick={(e) => {

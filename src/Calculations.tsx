@@ -22,11 +22,12 @@ const Calculations = () => {
   };
   return (
     <>
-      <div className="flex flex-row justify-between w-full  mt-5 py-3 px-10 shadow-md bg-gray-50">
+      <div className="flex flex-row justify-between w-full  mt-5 py-3 px-10 shadow-lg rounded bg-gray-50">
         <span className="flex flex-col justify-center items-center">
           <span className="font-bold uppercase">Income</span>
           <span className="font-bold text-2xl text-teal-500">${getIncome().toFixed(2)}</span>
         </span>
+        <hr className="h-16 w-px bg-gray-300 shadow-lg"></hr>
         <span className="flex flex-col justify-center items-center">
           <span className="font-bold uppercase">Expense</span>
           <span className="font-bold text-2xl text-red-500">${getExpense().toFixed(2)}</span>
