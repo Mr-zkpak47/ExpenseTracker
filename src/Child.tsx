@@ -38,7 +38,7 @@ const Child = () => {
                 key={transaction.id}
                 className="flex justify-between flex-row bg-gray-50 w-full p-2 shadow-md relative h-10 items-center overflow-hidden"
               >
-                <span className="item flex flex-row justify-between items-center absolute bg-red-50 w-11/12 hover:w-4/5 transition-all">
+                <span className="item flex flex-row justify-between items-center absolute  w-11/12 md:hover:w-4/5 transition-all">
                   <span>{transaction.desc}</span>
                   {/* <span>${(transaction.amount<0?-"$"-Number(transaction.amount):(transaction.amount)).toFixed(2)}</span> */}
                   <span>
@@ -47,7 +47,7 @@ const Child = () => {
                   </span>
                 </span>
                 <button
-                  className={`cross absolute top-0 right-[-35px] h-full w-10 ${
+                  className={`cross absolute top-0  h-full w-10 ${
                     transaction.id % 2 === 0 ? "bg-violet-400" : "bg-rose-400"
                   } transition-all`}
                   type="button"
